@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .clear:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+        }
+
+        .nav {
+            height: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+            line-height: 50px;
+            background: black;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav>div {
+            flex: auto;
+        }
+        .nav1 {
+            height: 50px;
+            line-height: 50px;
+            padding-right: 25px;
+            font-size: 15px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav1 a {
+            color: lightgray;
+        }
+        .nav_png {
+            width: 15px;
+            height: 15px;
+            margin-top: 17px;
+            background: url(./images/素材2.png);
+            background-position: -230px -25px;
+        }
+        .nav2 {
+            height: 50px;
+            line-height: 50px;
+            padding-right: 25px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .body0 {
+            width: 100%;
+            padding-top: 50px;
+
+        }
+        .body1 {
+            display: inline;
+            float: left;
+            width: 60%;
+            
+            text-align: center;
+        }
+        .body2 {
+            display: inline;
+            float: left;
+            width: 40%;
+        }
+
+        @keyframes music{
+            0% {
+                transform: rotate(0deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        .body_top {
+            width: 170px;
+            height: 170px;
+            padding: 5px;
+            margin-left: 100px;
+            border-radius: 50%;
+            border: 1px solid lightgray;
+        }
+        .cir {
+            width: 170px;
+            height: 170px;
+            border-radius: 50%;
+            background-image: url(./images/素材1.jfif);
+            animation: music 5s linear 1s infinite;
+        }
+        
+        .body_bottom  {
+            margin-left: 50px;
+        }
+        .play {
+            display: inline;
+            float: left;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: url(./images/素材2.png);
+            background-color: gray;
+            background-position: 192px 121px;
+            /* 191px 40px */
+        }
+        .playerMid {
+            float: left;
+            width: 300px;
+            height: 60px;
+            overflow: hidden;
+            position: relative;
+        }
+        .playerMid #prograssBar {
+            float: left;
+            position: relative;
+            width: 100%;
+            height: 4px;
+            border-radius: 2px;
+            background: gray;
+            margin: 17px 20px 0 5px;
+            display: inline;
+        }
+        .playerMid .prograssBar {
+            width: 0px;
+            height: 4px;
+            background: #ffcd2d;
+        }
+        .playerMid #wp_bufBar {
+            width: 0px;
+            height: 4px;
+        }
+        .playerMid #wp_processBtn {
+            width: 10px;
+            height: 10px;
+            background: url(./images/素材2.png) 0 -128px;
+            position: absolute;
+            top: -3px;
+        }
+        .soundPro {
+            float: left;
+            position: relative;
+            display: inline;
+            width: 20px;
+            height: 18px;
+            margin-left: 50px;
+            background: url(./images/素材2.png);
+            background-color: gray;
+            background-position: 66px 123px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <div><img src="./images/素材3.jfif" alt=""></div>
+        <div><a href="">首页</a></div>
+        <div><a href="">榜单</a></div>
+        <div><a href="">歌手</a></div>
+        <div><a href="">下载酷我客户端</a></div>
+        <div class="nav1">
+            <div class="nav_png"></div>
+            <div><a href="">美女秀</a></div>
+            <div class="nav_png"></div>
+            <div><a href="">酷我耳机</a></div>
+            <div class="nav_png"></div>
+            <div><a href="">VIP会员</a></div>
+            <div class="nav_png"></div>
+            <div><a href="">i听</a></div>
+        </div>
+        <div class="nav2">
+            <div><a href="">更多服务</a></div>
+            <div><a href="">登录</a></div>
+            <div>^</div>
+        </div>
+        <div><img src="./images/素材4.png" alt=""></div>
+    </div>
+    <div class="body0 clear">
+        <div class="body1">
+            <h1>喜羊羊</h1>
+            <p>&nbsp</p>
+            <p><span style="color: gray">专辑：</span><span style="color: orange">儿歌大全</span>&nbsp&nbsp&nbsp<span style="color: gray">歌手：</span><span style="color: orange">华语群星</span>&nbsp&nbsp&nbsp<span>分享</span>&nbsp&nbsp&nbsp<span style="font-size: 10px;color: orange">评论</span></p>
+            <p style="font-size: 10px">上传时间：2015-10-02&nbsp歌曲来源：网络</p>
+            <p>&nbsp</p>
+            <hr>
+            <p>&nbsp</p>
+            <p class="te">在所有天气&nbsp拥有叫人&nbsp大笑的力量</p>
+            <p>&nbsp</p>
+            <p class="te">虽然我只是羊</p>
+            <p>&nbsp</p>
+            <p class="te">虽然我只是羊</p>
+            <p>&nbsp</p>
+            <p class="te">喜羊羊&nbsp美羊羊&nbsp懒洋洋&nbsp沸羊羊</p>
+            <p>&nbsp</p>
+            <p class="te">慢羊羊&nbsp软绵绵&nbsp红太狼&nbsp灰太狼</p>
+        </div>
+        <div class="body2">
+            <div class="body_top">
+                <div class="cir"></div>
+            </div>
+            <div class="body_bottom clear">
+                <audio autoplay="autoplay" id="mymusic">
+                    <source src="./images/古倩敏 - 别看我只是一只羊.mp3" type="audio/mp3">
+                </audio>
+                <div class="play" id="wp_playBtn"></div>
+                <div class="playerMid">
+                    <div id="prograssBar">
+                        <div id="wp_bufBar">
+                            <div class="prograssBar" id="wp_processBar"></div>
+                            <a href="##" class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>
+                        </div>
+                    </div>
+                </div>
+                <p id="wp_playTime" class="opacity">00:00</p>
+                <div class="soundPro" id="wp_volBar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="pass">
+
+    </div>
+</body>
+<script>
+    /*获取要操作的网页元素的DOM节点*/
+    var btn = document.getElementById("wp_playBtn");
+    var progressBar = document.getElementById("prograssBar");
+    var currentProgress = document.getElementById("wp_processBar");
+    var point = document.getElementById("wp_processBtn");
+    var timer = document.getElementById("wp_playTime");
+    var mutedBtn = document.getElementById("wp_volBar");
+    var mymusic = document.getElementById("mymusic");
+    var intervalId;
+
+    /*元素交互事件的设置*/
+    btn.onclick = function() {
+      if(mymusic.paused) {
+        mymusic.play();
+        this.style.backgroundPosition = "-138px -194px";
+        /*设置定时执行，动态修改当前播放时间，还有播放进度*/
+        intervalId = setInterval(changeProgress,1000);
+      }
+      else {
+        mymusic.pause();
+        this.style.backgroundPosition = "-137px -113px";
+        clearInterval(intervalId);
+      }
+      
+    }
+
+    /*改变当前时间和播放进度*/
+    function changeProgress() {
+      var currentTime = mymusic.currentTime;
+      var duration = mymusic.duration;
+
+      var minute = currentTime/60;
+      var second = currentTime%60;
+      minute = minute>=10?parseInt(minute):("0"+parseInt(minute));
+      second = second>=10?parseInt(second):("0"+parseInt(second));
+      timer.innerHTML = minute+":"+second;
+
+      var barWidth = progressBar.offsetWidth;
+      var rate = currentTime/duration;
+      currentProgress.style.width = barWidth*rate+"px";
+      point.style.left = barWidth*rate+"px";
+    }
+
+    /*点击时切换当前的静音与否状态设置*/
+    mutedBtn.onclick = function() {
+      mymusic.muted = !mymusic.muted;
+    }
+</script>
+</html>
